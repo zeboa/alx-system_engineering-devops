@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-pps axuf | less
+# A Bash script that displays a list of currently running processes
+
+ps axuf | less
