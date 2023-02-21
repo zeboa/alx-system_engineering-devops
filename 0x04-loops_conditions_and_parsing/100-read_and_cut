@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# A Bash script that displays the content of the file /etc/passwd
-
-file=/etc/passwd
-while read line
+# This script is displaying "Holberton School" 10 times
+file_h="/etc/passwd"
+while IFS= read -r line
 do
-    echo "$line" | cut -d':' -f1,3,6
-done < "$file"
+    echo "$line" | cut -d":" -f1,3,6
+done < "$file_h"
